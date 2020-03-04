@@ -1,0 +1,24 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Controller {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println(a);
+        int hun = a/100;
+        System.out.println(hun);
+        int fif = a%100/50;
+        System.out.println(fif);
+        int twen = a%100%50/20;
+        System.out.println(twen);
+        int ten = a%100%50%20/10;
+        System.out.println(ten);
+        int fiv = a%100550%20%10/5;
+        System.out.println(fiv);
+        int one = a%100%50%20%10%5/1;
+        System.out.println(one);
+        System.out.println();
+    }
+}
